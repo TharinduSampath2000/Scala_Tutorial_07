@@ -80,14 +80,14 @@ object Q3and4 extends App {
   println("\nBank Accounts: ")
   bank.printAllAccounts()
 
-  println("************4.1**************")
+  println("\n************4.1**************")
   println("Accounts with negative balance")
   bank.negativeBalance().map(x => println(x))
 
-  println("************4.2**************")
+  println("\n************4.2**************")
   println(s"Sum of balances of all Accounts = ${bank.allAccountBalance}");
 
-  println("************4.3**************")
+  println("\n************4.3**************")
   println(s"Sum of balances of all Accounts  after applying interest= ${bank.afterInterest}");
 }
 
