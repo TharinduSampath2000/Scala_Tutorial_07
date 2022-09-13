@@ -57,13 +57,13 @@ object Q3and4 extends App {
 
   //Q3
   println(s"account 1 : $account_1")
-  println(s"account 2 : $account_2")
+  println(s"account 2 : $account_2\n")
   
   println("Transferring 1000 from 2 to 1 ")
 
   var transfer_value = account_2.transfer(1000.0, account_1);
 
-  println(s"account 1 : $account_1")
+  println(s"\naccount 1 : $account_1")
   println(s"account 2 : $account_2")
 
   var bank: Bank = Bank(
@@ -77,17 +77,17 @@ object Q3and4 extends App {
   )
   
   //Q4
-  println("\nBank Accounts: ")
-  bank.printAllAccounts()
+  // println("\nBank Accounts: ")
+  // bank.printAllAccounts()
 
-  println("\n************4.1**************")
-  println("Accounts with negative balance")
-  bank.negativeBalance().map(x => println(x))
+  // println("\n************4.1**************")
+  // println("Accounts with negative balance")
+  // bank.negativeBalance().map(x => println(x))
 
-  println("\n************4.2**************")
-  println(s"Sum of balances of all Accounts = ${bank.allAccountBalance}");
+  // println("\n************4.2**************")
+  // println(s"Sum of balances of all Accounts = ${bank.allAccountBalance}");
 
-  println("\n************4.3**************")
-  println(s"Sum of balances of all Accounts  after applying interest= ${bank.afterInterest}");
+  // println("\n************4.3**************")
+  // println(s"Sum of balances of all Accounts  after applying interest= ${bank.afterInterest}");
 }
 
